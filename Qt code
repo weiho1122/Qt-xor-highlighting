@@ -1,0 +1,8 @@
+QPainter *painter;
+QWidget widget;
+QPainter dc(widget);
+Qpainter::CompositionMode lastMode = painter - > compositionMode();
+dc.setCompositionMode(QPainter::RasterOp_SourceXorDestination);
+dc.setPen(pen());
+dc.draw();
+dc.setCompositionMode(lastMode);
