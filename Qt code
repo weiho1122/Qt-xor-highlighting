@@ -4,5 +4,6 @@ QPainter dc(widget);
 Qpainter::CompositionMode lastMode = painter - > compositionMode();
 dc.setCompositionMode(QPainter::RasterOp_SourceXorDestination);
 dc.setPen(pen());
+dc.setMouseTracking(True);
 dc.draw();
 dc.setCompositionMode(lastMode);
